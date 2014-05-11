@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'paginas_estaticas/perfil'
+
+  get 'paginas_estaticas/liga'
+
+  get 'paginas_estaticas/equipo'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
