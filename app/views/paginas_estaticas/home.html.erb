@@ -1,0 +1,158 @@
+<% provide(:title, 'Pokapok') %>
+
+<div class:"container-fluid">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                SIGN IN
+              </button>
+              <!--LOGO-->
+              <div class="logo">
+                  <a href="index.html"><img src="images/brand.png" height="53" width="50" alt=""></a>
+              </div>
+          </div>
+          <div class="navbar-collapse collapse">
+              <form class="navbar-form navbar-right" role="form">
+                <div class="form-group">
+                    <input type="text" placeholder="Usuario o Email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-success">Sign in</button>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--DENTRO DE LA PAGINA))))))))))))))))))))))))))))))))))-->
+
+      <!--BIENVENIDA Y BOTONES-->
+        <!--BIENVENIDA-->
+        <div class="jumbotron">
+        <div id="bienvenida" class="container text-center">
+            <h1>¡Bienvenido a <span style="color:red">POKAPOK</span>!</h1>
+            <p>¡La comunidad más grande de deportistas en el mundo!</p>
+        </div>
+        </div>
+          <!-- Carousel
+    ================================================== -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+              <ol class="carousel-indicators hidden-xs">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+            <!--Dentro del carrusel-->
+            <div class="carousel-inner">
+                <!--Slide 1-->
+                <div class="item active">
+                  <!--Imagen de fondo-->
+                  <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="images/parkour.gif" height="253" width="500">
+                </div>
+                <!--Slide 2-->
+                <div class="item">
+                  <!--Imagen de fondo-->
+                  <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="images/bmx.gif" height="281" width="500">
+                </div>
+                <!--Slide 3-->
+                <div class="item">
+                  <!--imagen de fondo-->
+                  <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="images/soccer4.gif" height="281" width="500">
+                </div>
+            </div> 
+        </div>
+        <!--REGISTRATE-->
+        <div class="container-fluid">
+          <div id="botones" class="text-center">
+            <!--BOTONES SIGN IN Y REGISTRATE-->
+            <div class="row">
+              <!--REGISTRATE XS-->
+              <div class="col-xs-8 visible-xs col-xs-push-2">
+                <form>
+                  <h3 class="form-signin-heading">¿Nuevo en <span style="color:red">POKAPOK</span>?</h3>
+                  <p>¡Registrate!</p>
+                  <input type="text" class="form-control" placeholder="Nombre">
+                  <input type="text" class="form-control" placeholder="Apellido">
+                  <input type="email" class="form-control" placeholder="Email">
+                  <input type="password" class="form-control" placeholder="Password" >
+                  <label class="checkbox">
+                    <input type="checkbox" value="remember-me"> Remember me
+                  </label>
+                  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                </form>
+                <br>
+              </div>
+            </div> 
+          </div>
+          <div class="row">
+            <!--REGISTRATE SM,MD Y LG-->
+              <div class="col-sm-6 hidden-xs col-sm-push-3">
+                <form class="form-signin text-center" role="form">
+                  <h3 class="form-signin-heading">¿Nuevo en POKAPOK?</h3>
+                  <p>¡Registrate!</p>
+                  <input type="text" class="form-control" placeholder="Nombre">
+                  <input type="text" class="form-control" placeholder="Apellido">
+                  <input type="email" class="form-control" placeholder="Email">
+                  <input type="password" class="form-control" placeholder="Password">
+                  <label class="checkbox">
+                    <input type="checkbox" value="remember-me"> Remember me
+                  </label>
+                  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                </form>
+                <br>
+              </div>
+          </div>
+        </div>
+        <!--ICONOS E INFORMACIÓN-->
+        <div class="container-fluid">
+          <div id="iconos" class="row">
+            <!--ENCUENTRA-->
+            <div class="col-lg-4">
+              <div class="text-center">
+                <img class="img-responsive" src="iconos/localiza.png">
+                <p>Encuentra la liga mas cercana <br> de acuerdo a tu disponibilidad, <br> ya sea teniendo un equipo completo o tu solo</p>
+              </div>
+            </div>
+            <!--ADMINISTRA-->
+            <div class="col-lg-4">
+              <div class="text-center">
+                <img class="img-responsive" src="iconos/administra.png">
+                <p>Crea y organiza tus torneos o ligas; <br> administra equipos, jugadores y obtén estadísticas.</p>
+              </div>
+            </div>
+            <!--DESCUBRE-->
+            <div class="col-lg-4">
+              <div class="text-center">
+                <img class="img-responsive" src="iconos/participa.png">
+                <p>Descubre nuevo talento; <br> no importa donde, <br> no importa a que nivel.</p>
+              </div>
+            </div>
+          </div>
+        </div>  
+
+<!--))))))))))))))))))))))))FOOTER)))))))))))))))))))))))))))))))))))))))))))))))))-->
+        
+        <!--REDES SOCIALES, ACERCA-->
+        <div id="redes" class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <a href="http://facebook.com" target="_blank"><img src="redes/facebook.png"></a>
+              <a href="http://twitter.com" target="_blank"><img src="redes/twitter.png"></a>
+              <a href="http://youtube.com" target="_blank"><img src="redes/youtube.png"></a>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <p class="text-center"><a href="acerca.html">Acerca de POKAPOK</a></p>
+          </div>
+          <div class="row">
+            <p style="color:white" class="text-center">© POKAPOK 2014</p>
+          </div>
+        </div>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>

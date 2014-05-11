@@ -7,4 +7,10 @@ class PaginasEstaticasController < ApplicationController
 
   def equipo
   end
+
+  def crealiga
+  end
+
+  def home
+  end
 end
