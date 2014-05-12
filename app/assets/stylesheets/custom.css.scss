@@ -1,0 +1,152 @@
+@import "bootstrap";
+
+body{
+    font-family: Arimo;
+}
+
+#comenta{
+	margin-left: 80%;
+}
+
+.botones{
+
+	padding-top: 10px;
+}
+
+#derecha{
+	margin-right: 250px;
+
+}
+
+#busca{
+	padding-top: 15px;
+}
+
+#contenido{
+	
+	margin-top: 150px;
+}
+
+#acciones{
+	margin-top: 3%;
+}
+
+#seguir{
+	width: 144px;
+
+}
+
+#mensaje{
+	width: 144px;
+}
+
+#seccion{
+	margin-top: 5%;
+}
+
+/*Stars*/
+
+.stars{
+    width: 130px;
+    height: 26px;
+    background: url(http://sandbox.bumbu.ru/ui/external/stars.png) 0 0 repeat-x;
+    position: relative;
+}
+
+.stars .rating{
+    height: 26px;
+    background: url(http://sandbox.bumbu.ru/ui/external/stars.png) 0 -26px repeat-x;
+}
+
+.stars input{
+    display: none;
+}
+
+.stars label{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 26px;
+    width: 130px;
+    cursor: pointer;
+}
+.stars:hover label{
+    display: block;
+}
+.stars label:hover{
+    background: url(http://sandbox.bumbu.ru/ui/external/stars.png) 0 -52px repeat-x;
+}
+
+.stars label + input + label{width: 104px;}
+.stars label + input + label + input + label{width: 78px;}
+.stars label + input + label + input + label + input + label{width: 52px;}
+.stars label + input + label + input + label + input + label + input + label{width: 26px;}
+
+.stars input:checked + label{
+    display: block;
+    background: url(http://sandbox.bumbu.ru/ui/external/stars.png) 0 -52px repeat-x;
+}
+
+.stars{
+	margin-left: 0%;
+    margin-top: 10%;
+}
+
+
+#timestamp{
+	color:gray;
+}
+
+#avatar{
+	margin-left: 70%;
+}
+
+#bajo{
+	margin-top: 6%;
+	margin-left: 10%;
+}
+
+#badges{
+	margin-left: -10px;
+}
+
+.slide{
+	margin-left: 10%;
+}
+
+.descripcion{
+    background: #a134d8;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding-left: 13px;
+    padding-right: 5px;
+    padding-bottom: 4px;
+    margin-top: 0px;
+}
+
+.crea{
+    margin-left: 32%;
+}
+
+#cuestionario{
+    margin-top: -75px;
+}
+
+.parametros{
+    background: #b65fde;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+}
+
+#iconochico{
+    margin-top: -18px;
+}
+
+.verificada{
+    magin-top: 1%;
+}

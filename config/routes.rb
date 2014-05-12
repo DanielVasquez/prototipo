@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
-  get 'paginas_estaticas/perfil'
 
-  get 'paginas_estaticas/liga'
+  root 'paginas_estaticas#home'
 
-  get 'paginas_estaticas/equipo'
+  match '/perfil', to: 'paginas_estaticas#perfil', via: 'get'
 
-  get 'paginas_estaticas/crealiga'
+  match '/liga', to: 'paginas_estaticas#liga', via: 'get'
 
-  get 'paginas_estaticas/home'
+  match '/equipo', to: 'paginas_estaticas#equipo', via: 'get'
+
+  match '/crealiga', to: 'paginas_estaticas#crealiga', via: 'get'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

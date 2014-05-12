@@ -1,130 +1,23 @@
 <% provide(:title, 'Perfil') %>
 
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <a class="navbar-brand hidden-sm hidden-xs" href="index.html"><img class="img-responsive" src="images/brand.png"></a>
-
-          <div class="col-xs-1">
-          <a id="iconochico" class="navbar-brand visible-xs" href="index.html"><img class="img-responsive" src="images/brand.png"></a>
-          </div>
-
-        </div>
-
-        
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-
-          <form id="busca" class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="¿Que quieres jugar?">
-            </div>
-            <button type="submit" class="btn btn-default">Cascarea</button>
-          </form>
-
-          <ul class="nav navbar-nav navbar-right navbar-user">
-
-            <li>
-
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
-
-
-                <div class="derecha">
-                <div class="botones">
-                <button type="button" class="btn btn-default btn-md"><span class="glyphicon glyphicon-edit"></span>
-                </button>
-                </div>
-                </div>
-
-              </a>
-              
-              <ul class="dropdown-menu">
-                <li class="dropdown-header">Pok</li>
-               
-                
-                <li class="divider"></li>
-                <li>
-                  <span>
-                      <textarea rows="4" cols="50">
-                        Cuenta que trampa
-                      </textarea>
-                      <button id="comenta" type="button" class="btn btn-default btn-md"><span class="glyphicon glyphicon-comment"></span>
-                    </button>
-                  </span>                  
-                </li>
-
-              </ul>
-
-            </li>
-            <li>
-
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
-
-                <div class="derecha">
-                <div class="botones">
-                <button type="button" class="btn btn-default btn-md"><span class="glyphicon glyphicon-plus"></span>
-                </button>
-                </div>
-                </div>
-
-              </a>
-
-              <ul class="dropdown-menu">
-                <li><a href="#"><span class="label label-success">Crea un nuevo equipo</span></a></li>
-                <li><a href="crealiga.html"><span class="label label-success">Crea un nuevo torneo</span></a></li>
-              </ul>
-            </li>
-
-
-            <li class="dropdown user-dropdown">
-              
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="images/profilepic.png"><b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Perfil</a></li>
-                <li><a href="#">Configuración</a></li>
-                <li class="divider"></li> 
-                <li><a href="#"><i class="fa fa-power-off"></i>Cerrar sesión</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-
-      </nav>
-
     <div id="contenido" class="container-fluid">
       <div class="row">
         <div class="col-md-1 col-md-push-2">
-          <img src="images/avatar.png"> <br>
-          <div class="stars">
-                
-                <div class="rating" style="width:65%"></div>
-                <input type="radio" name="rating" id="star5" value="5">
-                <label for="star5"></label>
-                <input type="radio" name="rating" id="star4" value="4">
-                <label for="star4"></label>
-                <input type="radio" name="rating" id="star3" value="3">
-                <label for="star3"></label>
-                <input type="radio" name="rating" id="star2" value="2">
-                <label for="star2"></label>
-                <input type="radio" name="rating" id="star1" value="1">
-                <label for="star1"></label>
-          </div>
+          <%=image_tag("avatar.png")%>
+          
+          <%= render 'paginas_estaticas/stars' %>
+          
         </div>
         <div class="col-md-3 col-md-push-3">
 
           <table class="table table-hover">
             <tr>
               <td>Delantera</td>
-              <td><a href="equipo.html">@Hooligans <img src="images/bandera.png"></a></td>
+              <td><a href="equipo.html">@Hooligans <%=image_tag("bandera.png")%></a></td>
             </tr>
             <tr>
               <td>Inscrita en:</td>
-              <td><a href="liga.html">@Liga Oceania <img src="images/oceania.png"></a></td>
+              <td><a href="liga.html">@Liga Oceania <%=image_tag("oceania.png")%></a></td>
             </tr>
             <tr>
               <td>Seguidores</td>
@@ -157,9 +50,9 @@
               <h3 class="text-center">Sábado 12 de Abril</h3>
               <table class="table table-hover">
                 <tr>
-                  <td><a href="equipo1.html"><img src="images/bandera.png"></a></td>
+                  <td><a href="equipo1.html"><%=image_tag("bandera.png")%></a></td>
                   <td>VS </td>
-                  <td><a href="#"><img src="images/havana.png"></a> </td>
+                  <td><a href="#"><%=image_tag("havana.png")%></a> </td>
                 </tr>
               </table>
               <p class="text-center"><button type="button" class="btn btn-primary">Detalles del partido</button></p><br><br>
@@ -168,9 +61,9 @@
               <h3 class="text-center">Sábado 19 de Abril</h3>
               <table class="table table-hover">
                 <tr>
-                  <td><a href="equipo1.html"><img src="images/bandera.png"></a></td>
+                  <td><a href="equipo1.html"><%=image_tag("bandera.png")%></a></td>
                   <td>VS </td>
-                  <td><a href="#"><img src="images/havana.png"></a> </td>
+                  <td><a href="#"><%=image_tag("havana.png")%></a> </td>
                 </tr>
               </table>
               <p class="text-center"><button type="button" class="btn btn-primary">Detalles del partido</button></p><br><br>
@@ -179,9 +72,9 @@
               <h3 class="text-center">Sábado 26 de Abril</h3>
               <table class="table table-hover">
                 <tr>
-                  <td><a href="equipo1.html"><img src="images/bandera.png"></a></td>
+                  <td><a href="equipo1.html"><%=image_tag("bandera.png")%></a></td>
                   <td>VS </td>
-                  <td><a href="#"><img src="images/havana.png"></a> </td>
+                  <td><a href="#"><%=image_tag("havana.png")%></a> </td>
                 </tr>
               </table>
               <p class="text-center"><button type="button" class="btn btn-primary">Detalles del partido</button></p>
@@ -206,10 +99,8 @@
 
 
     <footer>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
-      <script src="./js/jquery.liquid-slider.min.js"></script>  
+       
       <script>
         $('#main-slider').liquidSlider();
       </script>
